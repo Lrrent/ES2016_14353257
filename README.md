@@ -20,7 +20,6 @@
  ---
 ### 2. DOL安装与配置(Ubuntu14.04下)
 **安装之前先换下源，这样可以提高下载速度。方法可参考链接[Ubuntu 14.04用户修改更新源和替换软件源的方法](http://www.linuxidc.com/Linux/2014-04/100476.htm)**
-<div style="margin-left:20px">
     <li>**安装一些必要的环境**</li>
     -安装更新
     <code>sudo apt-get update</code>
@@ -48,13 +47,13 @@
     <code>sudo apt-get install g++</code>
     ![image](https://github.com/Lrrent/ES2016_14353257/blob/master/screenshoot/configure错误，没装g++库.png)
     安装g++后再次运行configure,成功结果如下:
-    ![image](https://github.com/Lrrent/ES2016_14353257/raw/master/screenshoot/configure_success.png)
+    ![image](https://github.com/Lrrent/ES2016_14353257/blob/master/screenshoot/configure_success.png)
     -编译systemc,这一步花的时间比较长
     <code>sudo make install</code>
     -编译完后上一步没有什么错误的话,可以查看以下文件目录如下：
     <code>cd ..</code>
     <code>ls</code>
-    ![编译后目录](https://github.com/Lrrent/ES2016_14353257/raw/master/screenshoot/ls.jpg)
+    ![编译后目录](https://github.com/Lrrent/ES2016_14353257/blob/master/screenshoot/ls.jpg)
     <li>**编译DOL**</li>
     -进入刚刚新建的dol文件夹
     <code>cd ../dol</code>
@@ -69,15 +68,14 @@
     -然后就是编译dol
     <code>ant -f build_zip.xml all</code>
     如果编译成功就会显示build successful:
-    ![编译成功](https://github.com/Lrrent/ES2016_14353257/raw/master/screenshoot/all.jpg)
+    ![编译成功](https://github.com/Lrrent/ES2016_14353257/blob/master/screenshoot/all.jpg)
     <li>**运行第一个例子（接着上一步）**</li>
     -进入build/bin/main目录
     <code>cd build/bin/main</code>
     -运行第一个例子
     <code>ant -f runexample.xml -Dnumber=1</code>
     如果运行后你得到下面的结果，就说明配置成功了。
-    ![编译成功](https://github.com/Lrrent/ES2016_14353257/raw/master/screenshoot/build_success.jpg)
-</div>
+    ![编译成功](https://github.com/Lrrent/ES2016_14353257/blob/master/screenshoot/build_success.jpg)
 ###3. 实验感想及心得
 第一次实验是比较简单的DOL环境配置，但是也遇到了一些问题，比如说：
 1. 直接找到并修改build_zip.xml文件后无法保存，这是因为权限不够，只要在终端输入 <code>sudo gedit build_zip.xml </code>后再修改即可保存。
