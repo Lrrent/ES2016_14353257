@@ -46,15 +46,15 @@
     <code>../configure CXX=g++ --disable-async-updates </code>
     *如果你的系统中没有预先安装g++,则会出现以下的错误，解决方法只需要在终端中输入以下指令安装g++库就好*
     <code>sudo apt-get install g++</code>
-    ![没装g++结果](https://github.com/Lrrent/ES2016_14353257/screenshoot/configure错误，没装g++库.png)
+    ![没装g++结果](https://github.com/Lrrent/ES2016_14353257/raw/master/screenshoot/configure错误，没装g++库.png)
     安装g++后再次运行configure,成功结果如下:
-    ![configure成功](https://github.com/Lrrent/ES2016_14353257/screenshoot/configure_success.png)
+    ![configure成功](https://github.com/Lrrent/ES2016_14353257/raw/master/screenshoot/configure_success.png)
     -编译systemc,这一步花的时间比较长
     <code>sudo make install</code>
     -编译完后上一步没有什么错误的话,可以查看以下文件目录如下：
     <code>cd ..</code>
     <code>ls</code>
-    ![编译后目录](https://github.com/Lrrent/ES2016_14353257/screenshoot/ls.jpg)
+    ![编译后目录](https://github.com/Lrrent/ES2016_14353257/raw/master/screenshoot/ls.jpg)
     <li>**编译DOL**</li>
     -进入刚刚新建的dol文件夹
     <code>cd ../dol</code>
@@ -69,14 +69,14 @@
     -然后就是编译dol
     <code>ant -f build_zip.xml all</code>
     如果编译成功就会显示build successful:
-    ![编译成功](https://github.com/Lrrent/ES2016_14353257/screenshoot/all.jpg)
+    ![编译成功](https://github.com/Lrrent/ES2016_14353257/raw/master/screenshoot/all.jpg)
     <li>**运行第一个例子（接着上一步）**</li>
     -进入build/bin/main目录
     <code>cd build/bin/main</code>
     -运行第一个例子
     <code>ant -f runexample.xml -Dnumber=1</code>
     如果运行后你得到下面的结果，就说明配置成功了。
-    ![编译成功](https://github.com/Lrrent/ES2016_14353257/screenshoot/build_success.jpg)
+    ![编译成功](https://github.com/Lrrent/ES2016_14353257/raw/master/screenshoot/build_success.jpg)
 </div>
 ###3. 实验感想及心得
 第一次实验是比较简单的DOL环境配置，但是也遇到了一些问题，比如说：
