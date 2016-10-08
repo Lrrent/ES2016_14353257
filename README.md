@@ -46,7 +46,7 @@
     <code>../configure CXX=g++ --disable-async-updates </code>
     *如果你的系统中没有预先安装g++,则会出现以下的错误，解决方法只需要在终端中输入以下指令安装g++库就好*
     <code>sudo apt-get install g++</code>
-    ![image](https://github.com/Lrrent/ES2016_14353257/raw/master/screenshoot/configure错误，没装g++库.png)
+    ![image](ES2016_14353257/screenshoot/configure错误，没装g++库.png)
     安装g++后再次运行configure,成功结果如下:
     ![image](https://github.com/Lrrent/ES2016_14353257/raw/master/screenshoot/configure_success.png)
     -编译systemc,这一步花的时间比较长
