@@ -3,7 +3,11 @@
     1. 修改example1,使其输出三次方数
     2. 修改example2,让3个square模块变成2个
 ##二．    实验结果 ##
+###1. example1
+###2.  example2
 ##三．    实验步骤 ##
+###1. example1
+###2.  example2
 ##四．    实验代码分析##
 在分析之前我们需要先了解Example中代码的结构以便更加容易理解.可以看到两个example中都有三个主要文件,generator,consumer,square.根据dot图可以看出具体过程为由generator模块产生输入数据并写到端口PORT_OUT上,然后经过square模块对数据进行处理之后,由consumer模块读取输入端数据,然后打印出来.<br />
     1.    Example1<br />
