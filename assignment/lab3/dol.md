@@ -32,6 +32,11 @@
 	 　　![example2_dot](https://github.com/Lrrent/ES2016_14353257/blob/master/assignment/lab3/dot2.png)
   
 - ## 代码分析 ##
+在分析之前我们需要先了解Example中代码的结构以便更加容易理解.可以看到两个example中都有三个主要文件,generator,consumer,square.根据dot图可以看出具体过程为由generator模块产生输入数据并写到端口PORT_OUT上,然后经过square模块对数据进行处理之后,由consumer模块读取输入端数据,然后打印出来.
+1.	Example1
+根据上面分析,很容易知道如何修改了,既然只是需要输出结果变成三次方,那么就和generator模块以及consumer模块无关啦。只需要修改中间对数据的处理即可,所以只要将square.c中的i*i改为i*i*i即可。
+2.	Example2
+Example2的修改则需要分析一下example2.xml文件,它定义了系统的架构,即模块连接方式.在这个文件中定义了生产者模块,迭代生成了3个square模块以及消费者模块.因此,如果需要产生2个square模块,只需要将迭代次数N的value改为2即可.
 
 - ## 实验感想 ##
-     
+通过本次实验,我们大概可以知道嵌入式系统的三个主要模块了,信号收集,信号处理以及信号输出.由于这次实验涉及的代码量也不多并且ppt很详细,所以过程中并没有多大问题     
