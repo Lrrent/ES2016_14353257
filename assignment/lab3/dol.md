@@ -11,7 +11,7 @@
 ##四．    实验代码分析##
 在分析之前我们需要先了解Example中代码的结构以便更加容易理解.可以看到两个example中都有三个主要文件,generator,consumer,square.根据dot图可以看出具体过程为由generator模块产生输入数据并写到端口PORT_OUT上,然后经过square模块对数据进行处理之后,由consumer模块读取输入端数据,然后打印出来.<br />
     1.    Example1<br />
-    根据上面分析,很容易知道如何修改了,既然只是需要输出结果变成三次方,那么就和generator模块以及consumer模块无关啦。只需要修改中间对数据的处理即可,所以只要将square.c中的i*i改为i*i*i即可。<br />
+    根据上面分析,很容易知道如何修改了,既然只是需要输出结果变成三次方,那么就和generator模块以及consumer模块无关啦。只需要修改中间对数据的处理即可,所以只要将square.c中的``i*i``改为``i*i*i``即可。<br />
     2.	Example2<br />
     Example2的修改则需要分析一下example2.xml文件,它定义了系统的架构,即模块连接方式.在这个文件中定义了生产者模块,迭代生成了3个square模块以及消费者模块.因此,如果需要产生2个square模块,只需要将迭代次数N的value改为2即可.<br />
 
