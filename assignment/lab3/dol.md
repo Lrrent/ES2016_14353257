@@ -23,6 +23,14 @@ dot图:<br>
 d.	编译运行example1<br>
 ``    sudo ant -f runexample.xml -Dnumber=1``
 ###2.  example2
+a.	将example2中的example2.xml文件下图位置中的3改为2<br>
+![](https://github.com/Lrrent/ES2016_14353257/blob/master/assignment/lab3/example2_values-2.png)<br>
+b.	将dol/build/bin/main中的example2删除<br>
+c.	进入build/bin/main文件夹<br>
+    ``cd dol/build/bin/main``<br>
+d.	编译运行example2<br>
+    ``sudo ant -f runexample.xml -Dnumber=2``<br>
+
 ##四．    实验代码分析##
 在分析之前我们需要先了解Example中代码的结构以便更加容易理解.可以看到两个example中都有三个主要文件,generator,consumer,square.根据dot图可以看出具体过程为由generator模块产生输入数据并写到端口PORT_OUT上,然后经过square模块对数据进行处理之后,由consumer模块读取输入端数据,然后打印出来.<br />
     1.    Example1<br />
