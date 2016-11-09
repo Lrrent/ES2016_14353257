@@ -15,6 +15,13 @@ dot图:<br>
 ![](https://github.com/Lrrent/ES2016_14353257/blob/master/assignment/lab3/example2.png)
 ##三．实验步骤 
 ###1. example1
+ a. 将example1的src中square.c文件下图中的```i*i```改为```i*i*i```<br>
+    ![](https://github.com/Lrrent/ES2016_14353257/blob/master/assignment/lab3/ex1_i.jpg)<br>
+ b.将dol/build/bin/main中的example1删除<br>
+ c.	进入build/bin/main文件夹<br>
+    ``  cd dol/build/bin/main``<br>
+d.	编译运行example1<br>
+``    sudo ant -f runexample.xml -Dnumber=1``
 ###2.  example2
 ##四．    实验代码分析##
 在分析之前我们需要先了解Example中代码的结构以便更加容易理解.可以看到两个example中都有三个主要文件,generator,consumer,square.根据dot图可以看出具体过程为由generator模块产生输入数据并写到端口PORT_OUT上,然后经过square模块对数据进行处理之后,由consumer模块读取输入端数据,然后打印出来.<br />
