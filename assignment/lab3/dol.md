@@ -1,11 +1,19 @@
 # DOL实例分析与编程 #
-## 一．   实验任务 ##
+## 一．   实验任务 
     1. 修改example1,使其输出三次方数
     2. 修改example2,让3个square模块变成2个
-##二．    实验结果 ##
+##二．    实验结果 
 ###1. example1
+dot图:<br>
+![](https://github.com/Lrrent/ES2016_14353257/blob/master/assignment/lab3/dot1.png)
+<br>结果:<br>
+![](https://github.com/Lrrent/ES2016_14353257/blob/master/assignment/lab3/example1.png)
 ###2.  example2
-##三．    实验步骤 ##
+dot图:<br>
+![](https://github.com/Lrrent/ES2016_14353257/blob/master/assignment/lab3/dot2.png)
+<br>结果:<br>
+![](https://github.com/Lrrent/ES2016_14353257/blob/master/assignment/lab3/example2.png)
+##三．实验步骤 
 ###1. example1
 ###2.  example2
 ##四．    实验代码分析##
