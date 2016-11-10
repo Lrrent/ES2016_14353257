@@ -53,6 +53,6 @@ source ~/.bashrc
 测试教程[点击这里](http://www.th7.cn/system/lin/201504/103167.shtml)
 
 1. 安装完后打开终端,输入以下指令
-```
-roscore
-```
+   ```
+   roscore
+   ```
