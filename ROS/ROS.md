@@ -1,4 +1,3 @@
-
 ##ROS安装
 -----------
 ###一.ROS简介
@@ -56,3 +55,13 @@ source ~/.bashrc
    ```
    roscore
    ```
+2. 再开一个终端,输入下面的命令```rosrun turtlesim turtlesim_node```,打开一个有小乌龟的界面,如下图：
+![turtle](https://github.com/Lrrent/ES2016_14353257/blob/master/ROS/test_turtlesim.png)
+
+3. 另外打开一个终端,输入指令```rosrun turtlesim turtle_teleop_key```，这样就可以使用上下左右来控制乌龟走动了,之后会出现类似下面的界面:<br>
+![turtle](https://github.com/Lrrent/ES2016_14353257/blob/master/ROS/test_success.png)
+
+4. 然后再打开第四个终端,输入指令```rosrun rqt_graph rqt_graph```,可以看到ROS nodes以及Topic等图形展示
+![turtle](https://github.com/Lrrent/ES2016_14353257/blob/master/ROS/turtle_graph.png)
+
+5.  当你的乌龟可以控制跑动时,说明你安装成功了。
